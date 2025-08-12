@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #737373;
+  --dark-color: #171717;
+  --border-color: #d1d5db;
+  --active-color: #00b795;
+}
+
+.text-primary {
+  color: var(--dark-color);
+}
+
+.text-primary-hover:hover {
+  color: #00b795;
+}
+.text-primary-active {
+  color: var(--active-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.border-gray {
+  border-color: var(--border-color);
+}
+
+.button-primary {
+  background-color: #00b795;
+  color: white;
+}
+
+
+
+
+.marqueeSliderLeft {
+  animation: marqueeLeft 30s linear infinite;
+}
+
+@keyframes marqueeLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+.group:hover .marqueeSliderLeft {
+  animation-play-state: paused;
+}
+
+
+
+
+
+
+
+
+
